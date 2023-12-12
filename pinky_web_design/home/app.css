@@ -1,0 +1,32 @@
+.page_gap {
+    padding: 3% 5% 7%;
+}
+
+.product_menu {
+    padding: 30px;
+}
+
+.new_arrival img,
+.new_item img,
+.review img,
+.bestsellers img {
+    max-width: 100%;
+    height: auto;
+}
+
+.best img {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 30px;
+}
+
+/*  blank divider */
+.blank {
+    padding-top: 50px;
+}
+
+/* footer Q&A link */
+a {
+    text-decoration: none;
+    color: black;
+}

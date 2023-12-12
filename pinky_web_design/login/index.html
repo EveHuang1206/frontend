@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pinky Website Demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="app.css">
+</head>
+
+<body>
+
+  <!-- navigation bar -->
+  <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+    <div class="container">
+      <!-- logo image-->
+      <a class="navbar-brand" href="#">
+        <img src="https://img.shoplineapp.com/media/image_clips/616937dec050a800175a57ac/original.png?1634285534"
+          alt="Logo" height="24" class="d-inline-block align-text-top">
+      </a>
+      <!-- navbar toggler -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#expandme">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- navbar items -->
+      <div class="collapse navbar-collapse" id="expandme">
+        <div class="navbar-nav">
+          <a href="Home" class="nav-item nav-link">首頁</a>
+          <a href="Home" class="nav-item nav-link">所有商品</a>
+          <a href="Home" class="nav-item nav-link">瑄pasta</a>
+          <a href="Home" class="nav-item nav-link">瑄辣醬</a>
+          <a href="Home" class="nav-item nav-link">瑄春雨</a>
+          <a href="Home" class="nav-item nav-link">微微奶茶</a>
+          <a href="Home" class="nav-item nav-link">飽米花</a>
+          <a href="Home" class="nav-item nav-link">飽飽凍</a>
+          <a href="Home" class="nav-item nav-link">好好袋走組合</a>
+          <a href="Home" class="nav-item nav-link">官網會員</a>
+          <a href="Home" class="nav-item nav-link">常見問題</a>
+        </div>
+      </div>
+      <!-- navbar icons (search, profile, shopping cart)-->
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+        viewBox="0 0 16 16">
+        <path
+          d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle"
+        viewBox="0 0 16 16">
+        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" />
+        <path fill-rule="evenodd"
+          d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z" />
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart3"
+        viewBox="0 0 16 16">
+        <path
+          d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+      </svg>
+    </div>
+  </nav>
+
+  <div class="login_box">
+    <div class="tabs">
+      <!-- tab 1 -->
+      <input type="radio" class="tabs_radio" name="tabs-example" id="tab1" checked>
+      <label for="tab1" class="tabs_label">註冊會員</label>
+      <div class="tabs_content">
+        <div class="social-login-container">
+          <div class="row">
+            <!-- line login -->
+            <div class="col-6">
+              <button class="line-login">
+                <a
+                  href="https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26bot_prompt%3Daggressive%26state%3D4523095038277705%26scope%3Dprofile%2Bopenid%2Bemail%2Bphone%26client_id%3D2001788200%26redirect_uri%3Dhttps%253A%252F%252Fpinky.ladyflavor.com%252Fusers%252Fauth%252Fline%252Fsetup&loginChannelId=2001788200&loginState=veThMnIRj4jd7mIeo2Q7Pg">
+                  <img src="icon/line.png" alt="">
+                  <span>使用Line註冊</span>
+                </a>
+              </button>
+            </div>
+            <!-- facebook login -->
+            <div class="col-6">
+              <button class="facebook-login">
+                <a
+                  href="https://www.facebook.com/v2.6/dialog/oauth?auth_type=rerequest&client_id=1094068067736205&redirect_uri=https%3A%2F%2Fpinky.ladyflavor.com%2Fusers%2Fauth%2Ffacebook%2Fcallback&response_type=code&scope=email&state=1ee93c65c4141b73845366372813cdcb0fcb708c1dad48c0">
+                  <img src="icon/facebook.png" alt="">
+                  <span>使用Facebook註冊</span>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="login-info">
+          <p class="text-center">註冊電郵</p>
+          <div class="login-input">
+            <input type="text" placeholder="用戶名">
+            <input type="email" placeholder="電郵">
+            <input type="password" placeholder="密碼">
+          </div>
+          <p style="font-size: 12px;">至少8字元</p>
+        </div>
+
+        <div class="birthday">
+          <label for="birthday">生日日期</label>
+          <br>
+          <div class="row">
+          <select name="birthday-year" id="birthday" class="col-4">
+            <option value="" disabled selected>年</option>
+            <option value="">-</option>
+            <option value="2000">2000</option>
+            <option value="1999">1999</option>
+            <option value="1998">1998</option>
+            <option value="1997">1997</option>
+            <option value="1996">1996</option>
+            <option value="1995">1995</option>
+          </select>
+
+          <select name="birthday-month" id="birthday" class="col-4">
+            <option value="" disabled selected>月</option>
+            <option value="">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+          </select>
+
+          <select name="birthday-day" id="birthday" class="col-4">
+            <option value="" disabled selected>日</option>
+            <option value="">-</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            <option value="13">1</option>
+            <option value="14">2</option>
+            <option value="15">3</option>
+            <option value="16">4</option>
+            <option value="17">5</option>
+            <option value="18">6</option>
+            <option value="19">7</option>
+            <option value="20">8</option>
+            <option value="21">9</option>
+            <option value="22">10</option>
+            <option value="23">11</option>
+            <option value="24">12</option>
+            <option value="25">1</option>
+            <option value="26">2</option>
+            <option value="27">3</option>
+            <option value="28">4</option>
+            <option value="29">5</option>
+            <option value="30">6</option>
+            <option value="31">7</option>
+          </select>
+        </div>
+        </div>
+
+        <div class="receive_info">
+          <input type="checkbox" name="receive_info" id="receive_info">
+          <label for="receive_info">我願意接收 好味營養師品瑄 的最新消息、優惠及服務推廣相關資訊</label>
+        </div>
+
+        <br>
+
+        <div class="messenger">
+        <button class="btn-messenger">
+          <img src="icon/messenger.png" alt="">
+          <span>傳送到 Messenger</span>
+        </button>
+      </div>
+
+        <hr>
+
+        <div class="privacy">
+          <input type="checkbox" name="privacy_consent" id="privacy_consent">
+          <label for="privacy_consent">我同意<a href="https://pinky.ladyflavor.com/about/terms">網站服務條款</a>及<a
+              href="https://pinky.ladyflavor.com/about/privacy-policy">隱私權政策</a>
+          </label>
+        </div>
+
+        <br>
+        <button class="register">立即加入!</button>
+      </div>
+
+      <!-- tab 2 -->
+      <input type="radio" class="tabs_radio" name="tabs-example" id="tab2">
+      <label for="tab2" class="tabs_label">會員登入</label>
+      <div class="tabs_content">
+        <div class="social-login-container">
+          <div class="row">
+            <!-- line login -->
+            <div class="col-6">
+              <button class="line-login">
+                <a
+                  href="https://access.line.me/oauth2/v2.1/login?returnUri=%2Foauth2%2Fv2.1%2Fauthorize%2Fconsent%3Fresponse_type%3Dcode%26bot_prompt%3Daggressive%26state%3D4523095038277705%26scope%3Dprofile%2Bopenid%2Bemail%2Bphone%26client_id%3D2001788200%26redirect_uri%3Dhttps%253A%252F%252Fpinky.ladyflavor.com%252Fusers%252Fauth%252Fline%252Fsetup&loginChannelId=2001788200&loginState=veThMnIRj4jd7mIeo2Q7Pg">
+                  <img src="icon/line.png" alt="">
+                  <span>使用Line登入</span>
+                </a>
+              </button>
+            </div>
+            <!-- facebook login -->
+            <div class="col-6">
+              <button class="facebook-login">
+                <a
+                  href="https://www.facebook.com/v2.6/dialog/oauth?auth_type=rerequest&client_id=1094068067736205&redirect_uri=https%3A%2F%2Fpinky.ladyflavor.com%2Fusers%2Fauth%2Ffacebook%2Fcallback&response_type=code&scope=email&state=1ee93c65c4141b73845366372813cdcb0fcb708c1dad48c0">
+                  <img src="icon/facebook.png" alt="">
+                  <span>使用Facebook登入</span>
+                </a>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <div class="login-info">
+          <p class="text-center">登入電郵</p>
+          <div class="login-input">
+            <input type="email" placeholder="電郵">
+            <input type="password" placeholder="密碼">
+          </div>
+          <button class="start-buying">開始購物吧！</button>
+        </div>
+
+        <div class="forget-password">
+          <a href="https://pinky.ladyflavor.com/users/password/new">忘記密碼?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Footer -->
+  <footer class="text-center text-lg-start bg-light text-muted">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 p-3">
+          <p>
+            營養師品瑄 © 短捲麻股份有限公司｜統編 50880607 <br>
+            退換貨政策 |
+            <a class="QA-link" href="https://pinky.ladyflavor.com/pages/qa" target="_blank">常見Q&A</a> <br>
+            聯絡地址 | 台中市烏日區民權街93號
+          </p>
+        </div>
+        <div class="col-lg-6 p-3">
+          <p>
+            客服專線：0979-109-120 ｜ 平日 09 : 00 - 17 : 00 <br>
+            Mail | ladyflavor.pinky@gmail.com <br>
+            國泰產物產品責任保險 | 1502字第10PD03971號
+          </p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+body {
+    
+    margin: 50px;
+}
+
+.login_box {
+    width: 700px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+    margin: 100px 50px;
+}
+
+.tabs {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 700px;
+    font-family: sans-serif;
+}
+
+.tabs_label {
+    width: 50%;
+    padding: 15px 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+}
+
+.tabs_radio {
+    display: none;
+}
+
+.tabs_content {
+    order: 1;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 0.9em;
+    display: none;
+}
+
+.tabs_radio:checked+.tabs_label {
+    background-color: #eee;
+}
+
+.tabs_radio:checked+.tabs_label+.tabs_content {
+    display: initial;
+}
+
+.social-login-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* tab 1 */
+hr {
+    width: calc(90%);
+    border-color: #ddd;
+}
+
+.login-info p {
+    color: grey; 
+}
+
+.login-info p:nth-of-type(2) {
+    padding-left: 50px;
+    color: grey;
+}
+
+.birthday {
+    margin: 0px 50px;
+}
+
+.birthday select {
+    height: 30px;
+    color: grey;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    margin-bottom: 20px;
+}
+
+.birthday option {
+    padding: 6px 30px 6px 12px;
+}
+
+.receive_info, .messenger, .privacy {
+    margin-left: 50px;
+}
+
+.btn-messenger {
+    width: 200px;
+    background-color: white;
+    border: 1px solid #eee;
+    border-radius: 3px;
+    padding: 5px 5px;
+    margin: 5px 0px;
+}
+
+.btn-messenger img {
+    width: 20px;
+    height: 20px;
+}
+
+.btn-messenger span {
+    color: #2196F3;
+    font-weight: 400;
+}
+
+.privacy {
+    margin-bottom: 5px;
+}
+
+.privacy a {
+    text-decoration: none;
+}
+
+.register {
+    width: 600px;
+    background-color: #4EA74E;
+    color: white;
+    font-weight: 600;
+    padding: 8px 150px;
+    border-radius: 3px;
+    border: none;
+    margin: 0px 50px; 
+}
+
+/* tab 2 */
+/* line login button */
+.line-login {
+    width: 300px;
+    background-color: #00c300;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* line login img */
+.line-login img {
+    width: 30px;
+    height: 30px;
+}
+
+/* line login a, span */
+.line-login a,
+span {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+/* fb login button */
+.facebook-login {
+    width: 300px;
+    background-color: #3B5998;
+    padding: 12px 12px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* fb login img */
+.facebook-login img {
+    width: 30px;
+    height: 30px;
+}
+
+/* fb login a, span */
+.facebook-login a,
+span {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.login-input input {
+    width: 600px;
+    padding: 10px 20px;
+    margin: 10px 50px;
+    border: 1px solid #ddd;
+}
+
+.start-buying {
+    width: 600px;
+    padding: 10px 20px;
+    margin: 10px 50px;
+    background-color: #4EA74E;
+    color: white;
+    border: none;
+    border-radius: 3px;
+}
+
+.forget-password a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    color: grey;
+    margin: 15px 0;
+}
+
+.QA-link {
+    text-decoration: none;
+    color: grey;
+}
