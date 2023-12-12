@@ -1,6 +1,9 @@
 body {
-    
-    margin: 50px;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.icons{
+    width:130px;
 }
 
 .login_box {
@@ -17,7 +20,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     max-width: 700px;
-    font-family: sans-serif;
 }
 
 .tabs_label {
@@ -40,7 +42,7 @@ body {
     display: none;
 }
 
-.tabs_radio:checked+.tabs_label {
+.tabs_radio:hover+.tabs_label {
     background-color: #eee;
 }
 
@@ -54,8 +56,12 @@ body {
 }
 
 /* tab 1 */
+.divider{
+    margin: 0px 50px;
+}
+
 hr {
-    width: calc(90%);
+    width: 100%;
     border-color: #ddd;
 }
 
@@ -74,9 +80,11 @@ hr {
 
 .birthday select {
     height: 30px;
+    width: 195px;
     color: grey;
     border: 1px solid #ddd;
     border-radius: 3px;
+    margin-left: 10px;
     margin-bottom: 20px;
 }
 
